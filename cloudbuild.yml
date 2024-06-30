@@ -1,5 +1,5 @@
-# options:
-#   logging: CLOUD_LOGGING_ONLY
+options:
+  logging: CLOUD_LOGGING_ONLY
 
 # serviceAccount: 358360597696@cloudbuild.gserviceaccount.com
 # serviceAccount: 358360597696-compute@developer.gserviceaccount.com
