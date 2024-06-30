@@ -7,9 +7,9 @@ steps:
       [
         "build",
         "-t",
-        "northamerica-northeast1-docker.pkg.dev/tienda-microservices/image-registry/auth-ms",
+        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/auth-ms",
         "-f",
-        "dockerfile.prod",
+        "Dockerfile.prod",
         "--platform=linux/amd64",
         ".",
       ]
@@ -17,5 +17,5 @@ steps:
     args:
       [
         "push",
-        "northamerica-northeast1-docker.pkg.dev/tienda-microservices/image-registry/auth-ms",
+        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/auth-ms",
       ]
