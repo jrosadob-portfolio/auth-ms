@@ -1,6 +1,6 @@
 options:
   logging: CLOUD_LOGGING_ONLY
-  
+serviceAccount: 358360597696@cloudbuild.gserviceaccount.com
 steps:
   - name: "gcr.io/cloud-builders/docker"
     args:
