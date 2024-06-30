@@ -19,7 +19,7 @@ steps:
         "push",
         "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/$BRANCH_NAME-auth-ms",
       ]
-substitutions:
-  _ENVIRONMENT: "develop"
-options:
-  automapSubstitutions: true
+# substitutions:
+#   _ENVIRONMENT: "develop"
+# options:
+#   automapSubstitutions: true
