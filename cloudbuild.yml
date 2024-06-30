@@ -1,15 +1,13 @@
 options:
   logging: CLOUD_LOGGING_ONLY
 
-# serviceAccount: 358360597696@cloudbuild.gserviceaccount.com
-# serviceAccount: 358360597696-compute@developer.gserviceaccount.com
 steps:
   - name: "gcr.io/cloud-builders/docker"
     args:
       [
         "build",
         "-t",
-        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/auth-ms",
+        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/develop-auth-ms",
         "-f",
         "Dockerfile.prod",
         "--platform=linux/amd64",
@@ -19,5 +17,5 @@ steps:
     args:
       [
         "push",
-        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/auth-ms",
+        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/develop-auth-ms",
       ]
