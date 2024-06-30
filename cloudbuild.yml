@@ -2,24 +2,20 @@ options:
   logging: CLOUD_LOGGING_ONLY
 
 steps:
-  - name: "build step"
+  - name: "gcr.io/cloud-builders/docker"
     args:
       [
         "build",
         "-t",
-        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/$BRANCH_NAME-auth-ms",
+        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/$BRANCH_NAME-ms-auth",
         "-f",
         "Dockerfile.prod",
         "--platform=linux/amd64",
         ".",
       ]
-  - name: "push step"
+  - name: "gcr.io/cloud-builders/docker"
     args:
       [
         "push",
-        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/$BRANCH_NAME-auth-ms",
+        "us-east1-docker.pkg.dev/jrosadob-ms-project/docker/$BRANCH_NAME-ms-auth",
       ]
-# substitutions:
-#   _ENVIRONMENT: "develop"
-# options:
-#   automapSubstitutions: true
